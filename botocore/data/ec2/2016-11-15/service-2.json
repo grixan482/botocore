@@ -24623,6 +24623,16 @@
           "documentation":"<p>Information about the import snapshot task.</p>",
           "locationName":"snapshotTaskDetail"
         },
+        "Notify":{
+          "shape":"Boolean",
+          "documentation":"<p>Notify of the task status via Email.</p>",
+          "locationName":"notify"
+        },
+        "Email":{
+          "shape":"String",
+          "documentation":"<p>Notification address.</p>",
+          "locationName":"email"
+        },
         "Tags":{
           "shape":"TagList",
           "documentation":"<p>Any tags assigned to the import snapshot task.</p>",
