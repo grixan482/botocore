@@ -2707,7 +2707,7 @@
       },
       "input":{"shape":"DescribeVirtualSwitchesRequest"},
       "output":{"shape":"DescribeVirtualSwitchesResult"},
-      "documentation":"<p>Creates a virtual switch.</p>"
+      "documentation":"<p>Describes a virtual switches.</p>"
     },
     "DescribeVolumeAttribute":{
       "name":"DescribeVolumeAttribute",
@@ -6090,10 +6090,6 @@
         "NextToken":{
           "shape":"String",
           "documentation":"<p>The token for the next page of results.</p>"
-        },
-        "MaxResults":{
-          "shape":"DescribeSubnetsMaxResults",
-          "documentation":"<p>The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned <code>nextToken</code> value.</p>"
         }
       }
     },
@@ -14384,6 +14380,11 @@
         }
       }
     },
+    "DescribeExtNetworksMaxResults":{
+      "type":"integer",
+      "max":1000,
+      "min":5
+    },
     "DescribeExtNetworksRequest":{
       "type":"structure",
       "members":{
@@ -14407,7 +14408,7 @@
           "documentation":"<p>The token for the next page of results.</p>"
         },
         "MaxResults":{
-          "shape":"DescribeSubnetsMaxResults",
+          "shape":"DescribeExtNetworksMaxResults",
           "documentation":"<p>The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned <code>nextToken</code> value.</p>"
         }
       }
@@ -14457,7 +14458,7 @@
         },
         "State":{
           "shape":"String",
-          "documentation":"<p>he current state of the External Network.</p>",
+          "documentation":"<p>The current state of the External Network.</p>",
           "locationName":"state"
         },
         "NetworkDescription":{
@@ -18093,6 +18094,11 @@
         }
       }
     },
+    "DescribeVirtualSwitchesMaxResults":{
+      "type":"integer",
+      "max":1000,
+      "min":5
+    },
     "DescribeVirtualSwitchesRequest":{
       "type":"structure",
       "members":{
@@ -18116,7 +18122,7 @@
           "documentation":"<p>The token for the next page of results.</p>"
         },
         "MaxResults":{
-          "shape":"DescribeSubnetsMaxResults",
+          "shape":"DescribeVirtualSwitchesMaxResults",
           "documentation":"<p>The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned <code>nextToken</code> value.</p>"
         }
       }
@@ -18962,10 +18968,6 @@
         "NextToken":{
           "shape":"String",
           "documentation":"<p>The token for the next page of results.</p>"
-        },
-        "MaxResults":{
-          "shape":"DescribeSubnetsMaxResults",
-          "documentation":"<p>The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned <code>nextToken</code> value.</p>"
         }
       }
     },
@@ -32474,7 +32476,7 @@
         },
         "Instances":{
           "shape":"Integer",
-          "documentation":"<p>he number of instances in PlacementGroup.</p>",
+          "documentation":"<p>The number of instances in PlacementGroup.</p>",
           "locationName":"instances"
         },
         "Tags":{
