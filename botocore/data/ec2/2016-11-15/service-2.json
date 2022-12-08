@@ -36323,7 +36323,7 @@
         },
         "RootDeviceName":{
           "shape":"String",
-          "documentation":"<p>The device name of the root device volume (for example, <code>/dev/sda1</code>).</p>",
+          "documentation":"<p>The device name of the root device volume (for example, <code>/dev/sda1</code>).</p>"
         },
         "MetadataOptions":{
           "shape":"InstanceMetadataOptionsRequest",
