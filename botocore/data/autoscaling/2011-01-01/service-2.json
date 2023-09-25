@@ -1198,7 +1198,7 @@
           "documentation":"<p>The current state of the group when the <a>DeleteAutoScalingGroup</a> operation is in progress.</p>"
         },
         "Tags":{
-          "shape":"TagDescriptionList",
+          "shape":"Tags",
           "documentation":"<p>The tags for the group.</p>"
         },
         "TerminationPolicies":{
@@ -1245,6 +1245,10 @@
         "MaxRecords":{
           "shape":"MaxRecords",
           "documentation":"<p>The maximum number of items to return with this call. The default value is <code>50</code> and the maximum value is <code>100</code>.</p>"
+        },
+        "Filters":{
+          "shape":"Filters",
+          "documentation":"<p>One or more filters to scope the tags to return.</p>"
         }
       }
     },
@@ -1317,6 +1321,10 @@
         "ProtectedFromScaleIn":{
           "shape":"InstanceProtected",
           "documentation":"<p>Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.</p>"
+        },
+        "Tags":{
+          "shape":"Tags",
+          "documentation":"<p>One or more tags. You can tag your Auto Scaling group and propagate the tags to the Amazon EC2 instances it launches. Tags are not propagated to Amazon EBS volumes. To add tags to Amazon EBS volumes, specify the tags in a launch template but use caution. If the launch template specifies an instance tag with a key that is also specified for the Auto Scaling group, Amazon EC2 Auto Scaling overrides the value of that instance tag with the value specified by the Auto Scaling group. For more information, see <a href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html\">Tagging Auto Scaling groups and instances</a> in the <i>Amazon EC2 Auto Scaling User Guide</i>.</p>"
         },
         "WeightedCapacity":{
           "shape":"XmlStringMaxLen32",
