@@ -1220,6 +1220,10 @@
         "CapacityRebalance":{
           "shape":"CapacityRebalanceEnabled",
           "documentation":"<p>Indicates whether Capacity Rebalancing is enabled.</p>"
+        },
+        "Id": {
+          "shape":"XmlString",
+          "documentation":"<p>The id of the group.</p>"
         }
       },
       "documentation":"<p>Describes an Auto Scaling group.</p>"
