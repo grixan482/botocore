@@ -1221,7 +1221,7 @@
           "shape":"CapacityRebalanceEnabled",
           "documentation":"<p>Indicates whether Capacity Rebalancing is enabled.</p>"
         },
-        "Id": {
+        "AutoScalingGroupId": {
           "shape":"XmlString",
           "documentation":"<p>The id of the group.</p>"
         }
